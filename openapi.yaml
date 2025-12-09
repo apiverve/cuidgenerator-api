@@ -1,0 +1,80 @@
+openapi: 3.0.4
+info:
+  title: Cuid Generator
+  description: Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/cuidgenerator:
+    get:
+      summary: Generate Cuid
+      description: Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
+      operationId: cuidgenerator
+      parameters:
+      - name: count
+        default: '1'
+        in: query
+        schema:
+          type: string
+        required: false
+        description: 'Number of Cuids to generate (1-100, default: 1)'
+        example: '10'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  cuids:
+                  - cmhzu69ab000a0014gltq2gcz
+                  - cmhzu69ab000b0014dux04sjb
+                  - cmhzu69ab000c00144z2o1nie
+                  - cmhzu69ab000d0014xwe6y6vt
+                  - cmhzu69ab000e001483anbp0u
+                  - cmhzu69ab000f00147idczfjv
+                  - cmhzu69ab000g00146cv0tjqx
+                  - cmhzu69ab000h0014hgohqbqj
+                  - cmhzu69ab000i0014cmo67sg6
+                  - cmhzu69ab000j0014spipnnvw
+                  count: 10
+                  format: c + timestamp + counter + fingerprint + random
+                  collision_resistant: true
+                  sortable: true
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
