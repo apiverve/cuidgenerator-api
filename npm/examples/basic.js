@@ -15,7 +15,7 @@ const api = new cuidgeneratorAPI({
 
 // Example query
 var query = {
-  count: "10"
+  count: 1
 };
 
 // Make the API request using callback
