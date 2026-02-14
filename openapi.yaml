@@ -1,33 +1,35 @@
 openapi: 3.0.4
 info:
   title: Cuid Generator
-  description: Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
+  description: >-
+    Cuid Generator is a tool for generating collision-resistant unique
+    identifiers (Cuids). Cuids are optimized for horizontal scaling and
+    sequential lookup performance in distributed systems.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/cuidgenerator:
     get:
       summary: Generate Cuid
-      description: Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
+      description: Generate one or more collision-resistant unique identifiers
       operationId: cuidgenerator
       parameters:
-      - name: count
-        default: '1'
-        in: query
-        schema:
-          type: string
-        required: false
-        description: 'Number of Cuids to generate (1-100, default: 1)'
-        example: '10'
+        - name: count
+          in: query
+          schema:
+            type: integer
+          required: false
+          description: Number of Cuids to generate
+          example: 10
       responses:
         '200':
           description: Successful Response
@@ -43,23 +45,23 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   cuids:
-                  - cmhzu69ab000a0014gltq2gcz
-                  - cmhzu69ab000b0014dux04sjb
-                  - cmhzu69ab000c00144z2o1nie
-                  - cmhzu69ab000d0014xwe6y6vt
-                  - cmhzu69ab000e001483anbp0u
-                  - cmhzu69ab000f00147idczfjv
-                  - cmhzu69ab000g00146cv0tjqx
-                  - cmhzu69ab000h0014hgohqbqj
-                  - cmhzu69ab000i0014cmo67sg6
-                  - cmhzu69ab000j0014spipnnvw
+                    - cmj95ed27000000145v116use
+                    - cmj95ed2700010014uuounuyc
+                    - cmj95ed27000200147pwbz35y
+                    - cmj95ed27000300142h9ivqrz
+                    - cmj95ed27000400149ingh73n
+                    - cmj95ed2700050014mg9alsah
+                    - cmj95ed27000600149utx0fy3
+                    - cmj95ed270007001467kspfhp
+                    - cmj95ed2700080014n7ykgwxf
+                    - cmj95ed2700090014rrnfehcn
                   count: 10
                   format: c + timestamp + counter + fingerprint + random
                   collision_resistant: true
@@ -69,7 +71,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -77,4 +79,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
