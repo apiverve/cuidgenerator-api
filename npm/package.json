@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/cuidgenerator",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.",
   "main": "index.js",
   "types": "index.d.ts",
