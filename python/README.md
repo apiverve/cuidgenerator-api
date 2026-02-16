@@ -231,8 +231,9 @@ from apiverve_cuidgenerator.apiClient import CuidgeneratorAPIClient
 
 api = CuidgeneratorAPIClient("[YOUR_API_KEY]")
 
+query = { "count": 1 }
+
 try:
-    query = { "count": 1 }
     result = api.execute(query)
     print(result)
 finally:
