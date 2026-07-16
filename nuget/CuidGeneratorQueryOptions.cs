@@ -14,6 +14,6 @@ namespace APIVerve.API.CuidGenerator
         /// Number of Cuids to generate
         /// </summary>
         [JsonProperty("count")]
-        public string Count { get; set; }
+        public int? Count { get; set; }
     }
 }
