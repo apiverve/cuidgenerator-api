@@ -191,11 +191,43 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Cuid Generator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "cuids": [
+      "cmj95ed27000000145v116use",
+      "cmj95ed2700010014uuounuyc",
+      "cmj95ed27000200147pwbz35y",
+      "cmj95ed27000300142h9ivqrz",
+      "cmj95ed27000400149ingh73n",
+      "cmj95ed2700050014mg9alsah",
+      "cmj95ed27000600149utx0fy3",
+      "cmj95ed270007001467kspfhp",
+      "cmj95ed2700080014n7ykgwxf",
+      "cmj95ed2700090014rrnfehcn"
+    ],
+    "count": 10,
+    "format": "c + timestamp + counter + fingerprint + random",
+    "collision_resistant": true,
+    "sortable": true
+  }
 }
 ```
 
