@@ -1,13 +1,12 @@
-CuidGenerator API
+Cuid Generator API
 ============
 
-Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
+Cuid Generator creates collision-resistant unique identifiers (CUIDs) on demand for distributed applications. Pass an optional count to receive an array of unique ID strings, with paid plans adding structural format and sortability details.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [CuidGenerator API](https://apiverve.com/marketplace/cuidgenerator?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.CuidGenerator.svg)](https://www.nuget.org/packages/APIVerve.API.CuidGenerator)
+
+This is a .NET wrapper for the [Cuid Generator API](https://apiverve.com/marketplace/cuidgenerator?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the cuidgenerator API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Cuid Generator API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,8 +60,8 @@ class Program
         var apiClient = new CuidGeneratorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CuidGeneratorQueryOptions {
-    Count = 1
-};
+            Count = 1
+        };
 
         // Make the API call
         try
@@ -92,13 +91,13 @@ class Program
 
 ## Usage
 
-The CuidGenerator API documentation is found here: [https://docs.apiverve.com/ref/cuidgenerator](https://docs.apiverve.com/ref/cuidgenerator?utm_source=nuget&utm_medium=readme).
+The Cuid Generator API documentation is found here: [https://docs.apiverve.com/ref/cuidgenerator](https://docs.apiverve.com/ref/cuidgenerator?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-CuidGenerator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Cuid Generator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -125,8 +124,8 @@ public class Example
         var apiClient = new CuidGeneratorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CuidGeneratorQueryOptions {
-    Count = 1
-};
+            Count = 1
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -157,8 +156,8 @@ public class Example
         var apiClient = new CuidGeneratorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CuidGeneratorQueryOptions {
-    Count = 1
-};
+            Count = 1
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -194,8 +193,8 @@ public class Example
         var apiClient = new CuidGeneratorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CuidGeneratorQueryOptions {
-    Count = 1
-};
+            Count = 1
+        };
 
         try
         {
@@ -250,8 +249,8 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new CuidGeneratorQueryOptions {
-    Count = 1
-};
+            Count = 1
+        };
 
         try
         {
@@ -391,7 +390,7 @@ using (var apiClient = new CuidGeneratorAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -402,12 +401,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
