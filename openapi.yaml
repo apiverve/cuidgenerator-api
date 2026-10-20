@@ -2,9 +2,10 @@ openapi: 3.0.4
 info:
   title: Cuid Generator
   description: >-
-    Cuid Generator is a tool for generating collision-resistant unique
-    identifiers (Cuids). Cuids are optimized for horizontal scaling and
-    sequential lookup performance in distributed systems.
+    Cuid Generator creates collision-resistant unique identifiers (CUIDs) on
+    demand for distributed applications. Pass an optional count to receive an
+    array of unique ID strings, with paid plans adding structural format and
+    sortability details.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +20,7 @@ servers:
 paths:
   /v1/cuidgenerator:
     get:
-      summary: Generate Cuid
+      summary: Cuid Generator
       description: Generate one or more collision-resistant unique identifiers
       operationId: cuidgenerator
       parameters:
