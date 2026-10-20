@@ -1,13 +1,12 @@
 Cuid Generator API
 ============
 
-Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
+Cuid Generator creates collision-resistant unique identifiers (CUIDs) on demand for distributed applications. Pass an optional count to receive an array of unique ID strings, with paid plans adding structural format and sortability details.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Cuid Generator API](https://apiverve.com/marketplace/cuidgenerator?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-cuidgenerator.svg)](https://pypi.org/project/apiverve-cuidgenerator/)
+
+This is a Python wrapper for the [Cuid Generator API](https://apiverve.com/marketplace/cuidgenerator?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-cuidgenerator
 
 ## Configuration
 
-Before using the cuidgenerator API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Cuid Generator API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Cuid Generator API documentation is found here: [https://docs.apiverve.com/ref/cuidgenerator](https://docs.apiverve.com/ref/cuidgenerator?utm_source=pypi&utm_medium=readme).
+The Cuid Generator API documentation is found here: [https://docs.apiverve.com/ref/cuidgenerator](https://docs.apiverve.com/ref/cuidgenerator?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -103,16 +102,16 @@ print(result)
   "error": null,
   "data": {
     "cuids": [
-      "cmhzu69ab000a0014gltq2gcz",
-      "cmhzu69ab000b0014dux04sjb",
-      "cmhzu69ab000c00144z2o1nie",
-      "cmhzu69ab000d0014xwe6y6vt",
-      "cmhzu69ab000e001483anbp0u",
-      "cmhzu69ab000f00147idczfjv",
-      "cmhzu69ab000g00146cv0tjqx",
-      "cmhzu69ab000h0014hgohqbqj",
-      "cmhzu69ab000i0014cmo67sg6",
-      "cmhzu69ab000j0014spipnnvw"
+      "cmj95ed27000000145v116use",
+      "cmj95ed2700010014uuounuyc",
+      "cmj95ed27000200147pwbz35y",
+      "cmj95ed27000300142h9ivqrz",
+      "cmj95ed27000400149ingh73n",
+      "cmj95ed2700050014mg9alsah",
+      "cmj95ed27000600149utx0fy3",
+      "cmj95ed270007001467kspfhp",
+      "cmj95ed2700080014n7ykgwxf",
+      "cmj95ed2700090014rrnfehcn"
     ],
     "count": 10,
     "format": "c + timestamp + counter + fingerprint + random",
@@ -245,7 +244,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -256,12 +255,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
