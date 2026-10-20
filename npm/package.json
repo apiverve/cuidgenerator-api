@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/cuidgenerator",
-  "version": "1.2.0",
-  "description": "Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.",
+  "version": "1.2.2",
+  "description": "Cuid Generator creates collision-resistant unique identifiers (CUIDs) on demand for distributed applications. Pass an optional count to receive an array of unique ID strings, with paid plans adding structural format and sortability details.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/cuidgenerator-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/cuidgenerator?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/cuidgenerator?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
