@@ -1,6 +1,6 @@
 # Cuid Generator API - PHP Package
 
-Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
+Cuid Generator creates collision-resistant unique identifiers (CUIDs) on demand for distributed applications. Pass an optional count to receive an array of unique ID strings, with paid plans adding structural format and sortability details.
 
 ## Installation
 
@@ -96,11 +96,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/cuidgenerator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/cuidgenerator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/cuidgenerator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/cuidgenerator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/cuidgenerator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/cuidgenerator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
