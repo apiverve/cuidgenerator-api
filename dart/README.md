@@ -1,11 +1,11 @@
 # Cuid Generator API - Dart/Flutter Client
 
-Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
+Cuid Generator creates collision-resistant unique identifiers (CUIDs) on demand for distributed applications. Pass an optional count to receive an array of unique ID strings, with paid plans adding structural format and sortability details.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_cuidgenerator.svg)](https://pub.dev/packages/apiverve_cuidgenerator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Cuid Generator API](https://apiverve.com/marketplace/cuidgenerator?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Cuid Generator API](https://apiverve.com/marketplace/cuidgenerator?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_cuidgenerator: ^1.1.14
+  apiverve_cuidgenerator: ^1.2.3
 ```
 
 Then run:
@@ -53,16 +53,16 @@ void main() async {
   "error": null,
   "data": {
     "cuids": [
-      "cmhzu69ab000a0014gltq2gcz",
-      "cmhzu69ab000b0014dux04sjb",
-      "cmhzu69ab000c00144z2o1nie",
-      "cmhzu69ab000d0014xwe6y6vt",
-      "cmhzu69ab000e001483anbp0u",
-      "cmhzu69ab000f00147idczfjv",
-      "cmhzu69ab000g00146cv0tjqx",
-      "cmhzu69ab000h0014hgohqbqj",
-      "cmhzu69ab000i0014cmo67sg6",
-      "cmhzu69ab000j0014spipnnvw"
+      "cmj95ed27000000145v116use",
+      "cmj95ed2700010014uuounuyc",
+      "cmj95ed27000200147pwbz35y",
+      "cmj95ed27000300142h9ivqrz",
+      "cmj95ed27000400149ingh73n",
+      "cmj95ed2700050014mg9alsah",
+      "cmj95ed27000600149utx0fy3",
+      "cmj95ed270007001467kspfhp",
+      "cmj95ed2700080014n7ykgwxf",
+      "cmj95ed2700090014rrnfehcn"
     ],
     "count": 10,
     "format": "c + timestamp + counter + fingerprint + random",
@@ -74,12 +74,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Cuid Generator API](https://apiverve.com/marketplace/cuidgenerator?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/cuidgenerator](https://docs.apiverve.com/ref/cuidgenerator?utm_source=dart&utm_medium=readme)
+- **API Home:** [Cuid Generator API](https://apiverve.com/marketplace/cuidgenerator?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/cuidgenerator](https://docs.apiverve.com/ref/cuidgenerator?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -87,4 +87,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

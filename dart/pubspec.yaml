@@ -1,7 +1,7 @@
 name: apiverve_cuidgenerator
-description: Cuid Generator is a tool for generating collision-resistant unique identifiers (Cuids). Cuids are optimized for horizontal scaling and sequential lookup performance in distributed systems.
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/cuidgenerator?utm_source=dart&utm_medium=homepage
+description: "Cuid Generator creates collision-resistant unique identifiers (CUIDs) on demand for distributed applications. Pass an optional count to receive an array of unique ID strings, with paid plans adding structural format and sortability details."
+version: 1.2.3
+homepage: https://apiverve.com/marketplace/cuidgenerator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/cuidgenerator-api/tree/main/dart
 
 environment:
